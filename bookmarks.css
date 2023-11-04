@@ -1,0 +1,172 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+div#content {
+  display: table;
+  padding-bottom: 6px;
+  background-color: #e2e2e2;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #0000ee;
+}
+.toolbar {
+  width: 100%;
+  height: 26px;
+  display: table-cell;
+  background-color: #333333;
+}
+.toolbar a {
+  color: white;
+  padding-left: 10px;
+  padding-top: 4px;
+  display: inline-block;
+}
+.toolbar input {
+  margin-left: 12px;
+}
+.column {
+  width: 18%;
+  display: block;
+  float: left;
+  margin-left: 16px;
+}
+.gadget,
+.notes {
+  margin-top: 10px;
+}
+.label {
+  background-color: #cccccc;
+  font-weight: bold;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+.durl {
+  width: 100%;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: block;
+}
+.aurl {
+  white-space: nowrap;
+}
+.pager {
+  margin-top: 4px;
+}
+.apager {
+  margin-right: 8px;
+}
+a.selected {
+  background-color: yellow;
+}
+#book-xml-text {
+  width: 99%;
+  height: 100px;
+}
+#label-search {
+  cursor: default;
+}
+#label-search:focus {
+  outline: none;
+}
+#form-search input {
+  margin-left: 0;
+  border-style: none;
+  border: 1px solid #666;
+  padding-left: 4px;
+  color: white;
+  background-color: #383838;
+}
+/*# sourceMappingURL=bookmarks.css.map */

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bookmarks</title>
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="bookmarks.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="bookmarks.js"></script>
+</head>
+<body>
+    <div class="toolbar">
+        <input type="button" id="update" value="Up" />
+        <a href="//www.google.com/bookmarks/mark?op=add&hl=en" target="_blank">Bookmarks</a>
+        <a href="//www.google.com/bookmarks/?output=xml&num=10000" target="_blank" id="bookmarks-export">/Export</a>
+        <a href="//docs.google.com/spreadsheet/ccc?key=0AkKkcuVJR3rqdDRZY0oxUzhyRU85aFI0SDZ1N1dhcGc#gid=20" target="_blank">Timesheet</a>
+        <a href="//drive.google.com/?tab=wo&authuser=0#my-drive" target="_blank">Drive</a>
+        <a href="//www.youtube.com/" target="_blank">YouTube</a>
+        <a href="//www.gog.com/" target="_blank">GoG</a>
+        <a href="//ctrepan2.deviantart.com/" target="_blank">DeviantArt</a>
+        <a href="//gist.github.com/gauchedroite" target="_blank">Gist</a>
+        <a href="//github.com/gauchedroite" target="_blank">GitHub</a>
+        <a href="//www.firebase.com/account/#/" target="_blank">Firebase</a>
+        <a href="//dashboard-next.heroku.com/apps" target="_blank">Heroku</a>
+        <a href="//mongolab.com/home" target="_blank">MongoDB</a>
+        <a href="//kanbanflow.com/administration" target="_blank">KanbanFlow</a>
+        <a href="//workflowy.com/" target="_blank">WorkFlowy</a>
+        <a href="index2.html" target="_blank">2&gt;</a>
+        <!--
+        <form id="form-search" action="http://www.google.ca/search" style="display:inline-block;">
+            <a id="label-search" href="#">Google</a>
+            <input type="text" name="q" size="40" maxlength="255" value="" />
+        </form>
+        -->
+    </div>
+
+    <div id="content">
+        <div id="book-xml" style="display:none;">
+            <form id="form-upload" method="post">
+                <textarea id="book-xml-text" name="book_xml_text"></textarea>
+                <input type="hidden" name="top_notes_text" />
+            </form>
+        </div>
+
+        <div class="column">
+            <div class="notes" id="top-notes" contenteditable spellcheck="false"></div>
+
+            <div class="gadget">
+                <div>
+                    <div class="label">Pages</div>
+                    <div class="page">
+                        <div class="durl"><a class="aurl" href="pages/bookmarks_2014-10-10.html" target="_blank">bookmarks 2014-10-10.html</a></div>
+                        <div class="durl"><a class="aurl" href="pages/bookmarks_2016-03-17.html" target="_blank">bookmarks 2016-03-17.html</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gadget" id="Games"></div>
+            <div class="gadget" id="Graphics" data-page-size="10"></div>
+        </div>
+
+        <div class="column">
+            <div class="gadget" id="Current_Interest"></div>
+            <div class="gadget" id="Movies"></div>
+        </div>
+
+        <div class="column">
+            <div class="gadget" id="Daily" data-sort="true"></div>
+            <div class="gadget" id="My_Sites" data-sort="true"></div>
+            <div class="gadget" id="My_Docs" data-sort="true"></div>
+            <div class="gadget" id="After_Effects"></div>
+            <div class="gadget" id="References" data-page-size="15"></div>
+        </div>
+
+        <div class="column">
+            <div class="gadget" id="Game_Design" data-page-size="15"></div>
+            <div class="gadget" id="Artists" data-page-size="15"></div>
+            <div class="gadget" id="Games_Misc"></div>
+        </div>
+
+        <div class="column">
+            <div class="gadget" id="haxe"></div>
+            <div class="gadget" id="iOS"></div>
+            <div class="gadget" id="Flash_Dev" data-page-size="20"></div>
+        </div>
+    </div>
+</body>
+</html>
